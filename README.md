@@ -1,62 +1,79 @@
-# Ephesus
+# academic
 
-Ephesus Jekyll Theme - Simple and Minimal Jekyll Blog Theme
+### A Jekyll theme for academia
 
-Author [Hakan Torun](https://hakan.io).
+![Academic Screenshot](https://raw.githubusercontent.com/LeNPaul/academic/gh-pages/screenshot.png)
 
-- **Demo:** https://pardin.us/ephesus/
+A Jekyll theme designed for academia, although you can use it for almost any other purpose as well:
 
-### Features
+* Showcase your research interests, publications, your curriculum vitae, the people in your research group, and your contact information.
 
-- [x] Tiny CSS & No Dependency
-- [x] Responsive Design
-- [x] Dark/Light Theme
-- [x] Custom 404 Page
-- [x] About Page
-- [x] Tags Page
-- [x] Code Highlighter
-- [x] Social Share
-- [x] Atom & Json feeds
-- [x] Robots.txt
-- [x] Sitemap
-- [x] Next & Previous Post
-- [x] Pagination
-- [x] Disqus
-- [x] Mathjax Support
-- [x] Google Analytics
+* Manage courses that you are teaching.
 
-## Screenshots
-
-#### Light
-![light-theme](https://github.com/onepase/Ephesus/blob/master/light.png)
-
-#### Dark
-![dark-theme](https://github.com/onepase/Ephesus/blob/master/dark.png)
+* Provide updates to your students and faulty.
 
 ## Installation
 
-Run local server:
+### Ruby Gem Method
 
-```bash
-$ git clone https://github.com/onepase/Ephesus.git
-$ cd Ephesus
-$ bundle install
-$ bundle exec jekyll build
-$ bundle exec jekyll serve
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "academic-jekyll-theme"
 ```
 
-Navigate to `127.0.0.1:4000`.
+And add this line to your Jekyll site's `_config.yml`:
 
-Tags are created automatically under the /tags page.
+```yaml
+theme: academic-jekyll-theme
+```
 
-To use a math formula in a post, use the mathjax:true tag in the post.
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install academic-jekyll-theme
+
+## Usage
+
+### Layouts
+
+The following sections describe usage instructions for this Jekyll theme,including available layouts, includes, sass and/or assets.
+
+#### Home
+
+The `_layouts/home.html` layout defines the home page for this theme. An introduction to your research group or to yourself can be provided, along with a list of featured publications. There is also a section for providing any updates through posts placed in the `_posts` directory.
+
+#### People
+
+The `_layouts/people.html` layout can be used to showcase and describe people in your research group. People are defined in the `_data/settings.yml` file, and markdown pages for each person with the `_layouts/page.html` layout can be placed in the `people` directory.
+
+#### Publications
+
+The `_layouts/publications.html` layout can be used to showcase selected publications, or the entire catalogue of publications. Direct links to the paper can be used, or a PDF copy of the paper can be served. Publications are defined in the `_data/publications.yml` file, and any PDF files that are served can be placed in the `publications` directory.
+
+#### Courses
+
+The `_layouts/courses.html` layout can be used to showcase courses that were taught in the past or are currently being taught. Courses are defined in the `_data/settings.yml` file, and markdown pages for each course with the `_layouts/page.html` layout can be placed in the `courses` directory. Related course material, such as PDF files, can also be placed in the `courses` directory in a subdirectory with the same name as the corresponding course.
+
+#### CV
+
+The `_layouts/cv.html` layout can be used to showcase a curriculum vitae. The sections of the cv are defined in the `_data/cv` directory, where each section has its own `<section>.yml` file.
+
+#### Contact
+
+The `_layouts/contact.html` layout can be used to provide contact information for the research group or the people that lead the research group. Contact information is defined in the `_data/settings.yml` file.
 
 ## Contributing
 
-Feel free to open a pull request for contributing.
+Bug reports and pull requests are welcome on GitHub at https://github.com/LeNPaul/academic. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-Please feel free to contribute. Do not hesitate to open a pull request and fix it, please read [contributing](./CONTRIBUTING.md) before PR.
+## Development
+
+To set up your environment to develop this theme, run `bundle install`, then run `bundle exec jekyll serve`, and open your browser at `http://localhost:4000`. This starts a Jekyll server using this theme. Make changes to the pages, documents, data, etc. like normal to test this theme's contents. As you make modifications to this theme the site will regenerate and you should see the changes in the browser after a refresh.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE.md).
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
