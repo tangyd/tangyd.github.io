@@ -17,9 +17,9 @@ menu:
 
 social:
 - {icon: 'github', link: 'https://github.com/tangyd'}
-- {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/lenpaul'}
+- {icon: 'twitter', link: 'https://twitter.com/tangyd66'}
+- {icon: 'instagram', link: 'https://www.instagram.com/ireneanarkh/'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/yudan-tang-348a3819b/'}
 
 contacts:
 - {name: 'Yudan Tang', department: 'Statistics & Actual Science', institution: 'The University of Hong Kong', phone: '(+852) 6876-8657', email: 'tangyd@hku.hk', image: 'assets/img/contact.jpg'}
