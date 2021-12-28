@@ -23,4 +23,4 @@ social:
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/yudan-tang-348a3819b/'}
 
 contacts:
-- {name: 'Yudan Tang', department: 'Statistics & Actual Science', institution: 'The University of Hong Kong', phone: '(+852) 6876-8657', email: 'tangyd@hku.hk', image: 'assets/img/contact.jpg'}
+- {name: 'Yudan Tang', department: 'Department of Statistics & Actual Science', institution: 'The University of Hong Kong', phone: '(+852) 6876-8657', email: 'tangyd@hku.hk', image: 'assets/img/contact.jpg'}
